@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Обчислення суми</title>
+    <script>
+        function calculateSum() {
+            var num1 = parseFloat(document.getElementById("num1").value);
+            var num2 = parseFloat(document.getElementById("num2").value);
+            var result = num1 + num2;
+            document.getElementById("result").innerHTML = "Сума: " + result;
+        }
+    </script>
+</head>
+<body>
+    <h1>Обчислення суми</h1>
+    <label for="num1">Число 1:</label>
+    <input type="text" id="num1"><br><br>
+    
+    <label for="num2">Число 2:</label>
+    <input type="text" id="num2"><br><br>
+    
+    <button onclick="calculateSum()">Обчислити суму</button><br><br>
+    
+    <div id="result"></div>
+</body>
+</html>
